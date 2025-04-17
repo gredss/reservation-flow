@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 try:
-    model = joblib.load('XGB_trained_model.json')
+    model = joblib.load('XGB_trained_model.pkl')
 except Exception as e:
     st.error(f"Error loading model: {e}")
     st.stop()
