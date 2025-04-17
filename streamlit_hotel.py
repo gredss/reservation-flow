@@ -40,7 +40,7 @@ def get_user_input():
 
     no_of_previous_cancellations = st.sidebar.number_input("Previous Cancellations", min_value=0, step=1)
     no_of_previous_bookings_not_canceled = st.sidebar.number_input("Previous Bookings (Not Canceled)", min_value=0, step=1)
-    avg_price_per_room = st.sidebar.number_input("Average Price per Room", min_value=0.0, step=1.0)
+    avg_price_per_room = st.sidebar.slider("Average Price per Room", min_value=0.0, max_value=800.0, step=1.0)
     no_of_special_requests = st.sidebar.number_input("Number of Special Requests", min_value=0, step=1)
 
     meal_plan = st.sidebar.selectbox(
@@ -50,7 +50,7 @@ def get_user_input():
 
     room_type = st.sidebar.selectbox(
         "Room Type Reserved",
-        ["Room_Type 1", "Room_Type 2", "Room_Type 3", "Room_Type 4", "Room_Type 5", "Room_Type 6", "Room_Type 7"],
+        ["Room Type 1", "Room Type 2", "Room Type 3", "Room Type 4", "Room Type 5", "Room Type 6", "Room Type 7"],
     )
 
     market_segment = st.sidebar.selectbox(
