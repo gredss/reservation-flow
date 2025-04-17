@@ -133,10 +133,10 @@ def preprocess_input(user_input):
     return pd.DataFrame([features])
 
 def main():
-    st.title("Hotel Booking Cancellation Predictor")
-    st.sidebar.title("Hotel Booking Cancellation Predictor")
+    st.title("**🛋️ Hotel Booking Cancellation Predictor**")
+    st.sidebar.title("**Booking Insights Tool**")
     st.markdown("Will this hotel booking be canceled or not?")
-    st.sidebar.markdown("Will this hotel booking be canceled or not?")
+    st.sidebar.markdown("Developed by Grace Esther")
 
     user_input = get_user_input()
     input_df = preprocess_input(user_input)
